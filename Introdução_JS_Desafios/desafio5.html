@@ -1,0 +1,30 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <script>
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+
+        ];
+
+        for (let value of usuarios) {
+
+            console.log("O " + value.nome + " possui as habilidades: " + value.habilidades.join(', '));
+
+        }
+    </script>
+</body>
+
+</html>

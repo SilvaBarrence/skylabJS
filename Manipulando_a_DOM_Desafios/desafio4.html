@@ -1,0 +1,53 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <div>
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul id="listName">
+
+        </ul>
+    </div>
+
+    <script>
+        var inputElement = document.querySelector('input[name=nome]');
+        var names = ["Diego", "Gabriel", "Lucas"];
+
+        for (let value of names) {
+            var listElement = document.createElement('li');
+
+            var textElement = document.createTextNode(value);
+            listElement.appendChild(textElement);
+
+            var containerElement = document.getElementById('listName');
+            containerElement.appendChild(listElement);
+
+        }
+
+
+        function adicionar() {
+            var filter_nome = /^([a-zA-Zà-úÀ-Ú]|\s+)+$/;
+            if (filter_nome.test(document.querySelector('input').value )) {
+                var newName = inputElement.value;
+                var listElement = document.createElement('li');
+
+                var textElement = document.createTextNode(newName);
+                listElement.appendChild(textElement);
+
+                var containerElement = document.getElementById('listName');
+                containerElement.appendChild(listElement);
+
+                document.querySelector('input').value = '';
+            }else {
+                alert('This field is required!');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <div id="app">
+        <button class="button">click for create a square!</button>
+    </div>
+
+    <script>
+        var btnElement = document.querySelector('button.button');
+        
+        btnElement.onclick =  function() {
+
+            var squareElement = document.createElement('div');
+            squareElement.setAttribute('class', 'newSquare');
+            squareElement.setAttribute('style', styles());
+
+            containerElement = document.querySelector('#app');
+            containerElement.appendChild(squareElement);
+
+        }
+
+        function styles(){
+
+            width = 100 ; 
+            height = 100; 
+            marginTop = 5; 
+            backgroundColor = '#f00';
+
+            var stylesElement =  'width:'+width+'; height:'+height+'; margin-top:'+marginTop+'; background-color:'+backgroundColor+';';
+
+            return stylesElement;
+        }
+
+    </script>
+</body>
+
+</html>

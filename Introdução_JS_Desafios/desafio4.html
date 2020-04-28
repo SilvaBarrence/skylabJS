@@ -1,0 +1,34 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <script>
+
+        function experiencia(anos) {
+            var anos, result;
+
+            if (anos == 7 || anos > 7) {
+                result = "Jedi Master";
+                return result;
+            } else if (anos > 3) {
+                result = "Avançado";
+                return result;
+            } else if (anos > 1) {
+                result = "Intermediário";
+                return result;
+            } else {
+                result = "Iniciante";
+                return result;
+            }
+        }
+        var anosEstudo = 7;
+        var xp = experiencia(anosEstudo);
+        console.log(xp);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <script>
+
+        function temHabilidade(skills) {
+            var skills, aux, result, skill = "Javascript";
+
+            result = skills.indexOf(skill, 0);
+            aux = (result != -1) ? true : false;
+            return aux;
+
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        var skill = temHabilidade(skills);
+        console.log(skill);
+
+    </script>
+</body>
+
+</html>

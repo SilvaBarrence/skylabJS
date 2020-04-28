@@ -1,0 +1,29 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <script>
+
+        function userInfo(rua, numero, bairro, cidade, uf) {
+            var frase = "O usuário mora em " + cidade + " /" + uf + ", no bairro " + bairro + ", na rua "+rua+" com nº "+numero+".";
+
+            return frase;
+        }
+
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        var frase = userInfo(endereco.rua, endereco.numero, endereco.bairro, endereco.cidade, endereco.uf);
+        console.log(frase);
+    </script>
+</body>
+
+</html>

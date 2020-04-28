@@ -1,0 +1,32 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Desafios JS primeiro módulo</title>
+</header>
+
+<body>
+    <div>
+        <ul id="listName">
+
+        </ul>
+    </div>
+
+    <script>
+
+        var names = ["Diego", "Gabriel", "Lucas"];
+
+        for (let value of names) {
+            var listElement = document.createElement('li');
+
+            var textElement = document.createTextNode(value);
+            listElement.appendChild(textElement);
+
+            var containerElement = document.getElementById('listName');
+            containerElement.appendChild(listElement);
+
+        }
+
+    </script>
+</body>
+
+</html>
